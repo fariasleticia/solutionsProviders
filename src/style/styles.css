@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Inter";
+    background-color: #ebe3dd;
+}
+
+/* Estilização da header com background cinza e padding */
+.header {
+    overflow: hidden;
+    background-color: #ecc19c;
+    padding: 20px 10px;
+}
+
+/* Estilização dos links da header */
+.header a {
+    float: left;
+    color: #1e847f;
+    text-align: center;
+    padding: 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Estilização do link da logo */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Mudar cor do background quando o mouse estiver sobreposto à header */
+.header a:hover {
+    background-color: #f1d2b7;
+    color: #1e847f;
+}
+
+/* Estilização do link ativo */
+.header a.active {
+    background-color: #1e847f;
+    color: #f1d2b7;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+    .header a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+     .header-right {
+        float: none;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    color:#1e847f;
+}
+
+.menu > a:link, .menu > a:visited, .menu > p {
+    color:#403f3f;
+}
+
+.menu > a:hover {
+    color:#1e847f;
+}
+
+.menu {
+    margin: 0 400px;
+    line-height: 25px;
+}
+
+.artigo {
+    margin: 50px 150px;
+    padding: 10px;
+}
+
+.titulo {
+    padding: 12px;
+    padding-left: 20px;
+    line-height: 12px;
+    background-color: #1e847f;
+    border-radius: 10px;
+    color:#f1d2b7;
+}
+
+.subtitulo {
+    color:#1e847f;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    align-items: center;
+    margin: 0 30px;
+}
+
+p, li, #adr3 > div > div > .subsubtitulo > p {
+    text-align: justify;
+    color: #403f3f;
+    font-size: medium;
+    line-height: 30px;
+    margin-right: 50px; 
+}
+
+img {
+    border-radius: 10px;
+    width: 350px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    border-color: #1e847f;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border-style: solid;
+    background-color: #1e847f33;
+}
+
+.subsubtitulo {
+    margin: -7px 50px -20px;
+}
+
+footer {
+    display: flex;
+    height: 100px;
+    background-color: #1e847f;
+    color:#ecc19c;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.divImagens {
+    display: flex;
+    justify-content: space-between;
+    margin: 60px 0;
+}
+
+#adr4img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#adr4img > img {
+    padding: 15px 10px;
+    width: 65%;
+    border-radius: 50px;
+}
+
+.call {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.call > a {
+    border: solid;
+    margin: 100px 50px;
+    text-align: center;
+    border-color: #1e847f;
+    border-radius: 10px;
+    padding: 10px 50px;
+    background-color: #1e847f45;
+}
+
+.call > a {
+    text-decoration: none;
+    color: #1e847f;
+    font-size: 20px;
+}
+
+.call > a:hover {
+    background-color: #1e847f8e;
+    border-color: #1e847f6b;
+    color: white;
+}
+
+#imgHome > img {
+    width: 100%;
+    border-radius: 0;
+}
+
+#titleHome {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: -20px;
+    color: #5e5e5e;
+}
